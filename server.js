@@ -18,18 +18,19 @@ app.use(session({
   cookie: { secure: false }
 }))
 
+app.use(require('./middlewares/flash.js'))
+
 app.get('/', (request, response) => {
-  if (request.session.error) {
-    response.locals.error = request.session.error
-    request.session.error = undefined
-  }
+  //console.log(request.session)
+  //console.log(response.locals.flash.error)
   response.render('pages/index')
 })
 
 app.post('/', (request, response) =>{
   if (request.body.message === undefined || request.body.message === '') {
-    request.session.error= 'Le message est vide !'
     //response.render('pages/index', {error: "Vous n'avez pas entré de message"})
+    //request.session.error= 'Le message est vide !'
+    request.flash('error', "vous n'avez pas posté de message")
     response.redirect('/')
   }
 })

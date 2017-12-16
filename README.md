@@ -30,5 +30,13 @@ Etapes
 - Utilisation de la session
   - Sauvegarder des données dans la session : equest.session.error
   - Accès aux données sauvegardées dans la session : equest.session.error
-- Création d'un middleware
-  -
+- Création d'un middleware de gestion de sessions
+  - Fichier de définition du middleware : middlewares/flash.js
+  - Déclaration du middleware
+    - module.exports = function (request, response, next)
+  - Ajout d'une méthode dans la request
+    - request.flash = function (type, content)
+  - Ajout d'une clé dans response.locals
+    -   response.locals.VARIABLE_NAME = value
+  - Accès du contenu correspondant à la clé
+    - response.locals.VARIABLE_NAME.PROPERTY_NAME
