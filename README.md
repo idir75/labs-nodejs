@@ -2,7 +2,7 @@ Lab
 - Création d'une application web avec node.js
 
 Objectif
-- Ce lab a pour objectif l'initialisation d'un projet node.js en utilisant les frameworks express (node pour applications web), ejs (moteur de template) et semanticui (css)
+- Ce lab a pour objectif l'initialisation d'un projet node.js en utilisant les frameworks express (node pour applications web), ejs (moteur de template) et semantic UI (CSS)
 
 Etapes
 - Créer le fichier server.js
@@ -18,7 +18,8 @@ Etapes
   - npm run start
 - Installation du moteur de tempate ejs
   - npm i -save ejs
-- Installation du framework CSS semanticui
-- Chargement des données statiques dans node/express : app.use(express.static('public'))
-  - Préciser à Express quel répertoire contient les fichiers statiques (dans notre exemple c'est le répertoire 'public'
-  - Il est possible d'associer un mot-clé avec tout le répertoire des fichiers statiques. Dès que le mot-clé est utilisé, Express sait qu'il s'agit de ressources statiques.
+- Installation du framework CSS semantic UI
+- Chargement des données statiques dans node/express
+  - app.use(express.static('public'))
+    - Préciser à Express quel répertoire contient les fichiers statiques (dans notre exemple c'est le répertoire 'public'
+    - Il est possible d'associer un mot-clé avec tout le répertoire des fichiers statiques. Dès que le mot-clé est utilisé, Express sait qu'il s'agit de ressources statiques.
