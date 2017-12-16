@@ -1,4 +1,3 @@
-let connection = require('../config/db')
 let MongoClient = require('mongodb').MongoClient
 let url = "mongodb://localhost:27017/mydb"
 
