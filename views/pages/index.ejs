@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<% include header %>
 
-<html>
-  <head>
-    <title>Demo</title>
-    <link rel="stylesheet" href="/assets/semantic/semantic.min.css">
-    <body>
+<form action="/" method="post" class="ui form">
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea name="message" id="message"></textarea>
 
-      <h1>Salut le monde</h1>
-      <p><%= test %>  </p>
-    </body>
+  </div>
+  <button type='submit' class="ui label labeled submit icon button">
+    <i class="icon edit"></i>Envoyer
+  </button>
+</form>
 
-  </head>
-</html>
+<% include footer %>
