@@ -40,3 +40,8 @@ Etapes
     -   response.locals.VARIABLE_NAME = value
   - Accès du contenu correspondant à la clé
     - response.locals.VARIABLE_NAME.PROPERTY_NAME
+- Installaton de mongodb
+  - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+  - 
+- Installation du module mongodb
+  - npm i --save mongodb
