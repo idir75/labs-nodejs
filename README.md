@@ -1,6 +1,8 @@
-Lab serveur node.js
+Lab
+- Création d'une application web avec node.js
 
-Objectif : ce lab a pour objectif l'initialisation d'un projet node.js en utilisant les frameworks express (node pour applications web), ejs (moteur de template) et semanticui (css)
+Objectif
+- Ce lab a pour objectif l'initialisation d'un projet node.js en utilisant les frameworks express (node pour applications web), ejs (moteur de template) et semanticui (css)
 
 Etapes
 - Créer le fichier server.js
