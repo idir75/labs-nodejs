@@ -23,3 +23,5 @@ Etapes
   - app.use(express.static('public'))
     - Préciser à Express quel répertoire contient les fichiers statiques (dans notre exemple c'est le répertoire 'public'
     - Il est possible d'associer un mot-clé avec tout le répertoire des fichiers statiques. Dès que le mot-clé est utilisé, Express sait qu'il s'agit de ressources statiques.
+-- Insallation du package body-parser
+  - npm i --save body-parser
