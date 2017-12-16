@@ -22,7 +22,10 @@ app.use(require('./middlewares/flash.js'))
 app.get('/', (request, response) => {
   //console.log(request.session)
   //console.log(response.locals.flash.error)
-  response.render('pages/index')
+  let Message = require('./models/message')
+  Message.getAll(function(messages) {
+    response.render('pages/index', {messages: messages})
+  })
 })
 
 app.post('/', (request, response) =>{

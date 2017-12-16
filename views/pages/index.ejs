@@ -11,4 +11,16 @@
   </button>
 </form>
 
+<div class="ui comments">
+  <h3 class="ui dividing header">Commentaires</h3>
+  <% for (message of messages) {%>
+    <div class="comments">
+      <div class="content">
+        <div class="test">
+          <%= message.messages%>
+        </div>
+      </div>
+    </div>
+  <% } %>
+</div>
 <% include footer %>
