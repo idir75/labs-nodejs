@@ -1,5 +1,8 @@
-labNodeJs
+Lab serveur node.js
 
+Objectif : ce lab a pour objectif l'initialisation d'un projet node.js en utilisant les frameworks express (node pour applications web), ejs (moteur de template) et semanticui (css)
+
+Etapes
 - Créer le fichier server.js
 - Initialiser le projet avec la commande : npm Init
   - Cela a pour conséquence la création du fichier package.json contenant la description du projet
