@@ -42,6 +42,12 @@ Etapes
     - response.locals.VARIABLE_NAME.PROPERTY_NAME
 - Installaton de mongodb
   - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
-  - 
+  -
 - Installation du module mongodb
   - npm i --save mongodb
+- Création de la base de données mongodb
+  - config\mongodb_create_db.js
+- Création de la collection : messages
+  - mongodb_create_collection.js
+
+ 
