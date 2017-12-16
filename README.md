@@ -11,3 +11,5 @@ labNodeJs
   - npm i --save nodemon
 - pour lancer le serveur
   - npm run start
+- Installation du moteur de tempate ejs
+  - npm i -save ejs
