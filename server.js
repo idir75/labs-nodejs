@@ -20,8 +20,6 @@ app.use(session({
 app.use(require('./middlewares/flash.js'))
 
 app.get('/', (request, response) => {
-  //console.log(request.session)
-  //console.log(response.locals.flash.error)
   let Message = require('./models/message')
   Message.getAll(function(messages) {
     response.render('pages/index', {messages: messages})
@@ -38,8 +36,13 @@ app.post('/', (request, response) =>{
         request.flash('success', 'Merci !')
         response.redirect('/')
     })
-    //
   }
 })
 
+app.get('/message/:id', (request, response) => {
+  let Message = require('./models/message')
+  Message.find(request.params.id, function(message){
+    response.render('message/show', {messages: message})
+  })
+})
 app.listen(8088)

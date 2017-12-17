@@ -48,3 +48,7 @@ Etapes
   - config\mongodb_create_db.js
 - Création de la collection : messages
   - mongodb_create_collection.js
+- Insertion et récupération des messages
+  - message.js
+- Installation du package moment
+  - npm i --save moment

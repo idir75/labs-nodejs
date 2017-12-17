@@ -1,8 +1,27 @@
 let MongoClient = require('mongodb').MongoClient
 let url = "mongodb://localhost:27017/mydb"
 
+let moment = require('../config/moment')
+
+var ObjectId = require('mongodb').ObjectID;
 
 class Message {
+
+  constructor (row) {
+    this.row = row
+  }
+
+  get messages() {
+    return this.row.messages
+  }
+
+  get created_at() {
+    return moment(this.row.created_at)
+  }
+
+  get id() {
+    return this.row._id
+  }
 
   static create (content, cb) {
     MongoClient.connect(url, function(err, db) {
@@ -22,13 +41,28 @@ class Message {
     MongoClient.connect(url, function(err, db) {
     if (err) throw err
     var dbase = db.db("mydb");
-    dbase.collection("messages").find({}).toArray(function(err, result) {
+    dbase.collection("messages").find({}).toArray(function(err, rows) {
     if (err) throw err;
-    console.log(result);
+    console.log(rows);
     db.close();
-    cb(result)
+    cb(rows.map((row) => new Message(row)))
     });
   })
+ }
+
+ static find(id, cb) {
+   MongoClient.connect(url, function(err, db) {
+   if (err) throw err
+   var dbase = db.db("mydb");
+   var query = { '_id': new ObjectId(id) };
+   dbase.collection("messages").find(query).toArray(function(err, rows) {
+   if (err) throw err;
+   console.log('id == ' + id);
+   console.log('rows[0] == ' + rows[0]);
+   db.close();
+   cb(new Message(rows[0]))
+   });
+ })
  }
 
 }
