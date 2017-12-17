@@ -52,7 +52,7 @@ Etapes
   - message.js
 - Installation du package moment
   - npm i --save moment
-- Internationalisation
+- Configuration de la locale
  - moments.js
 - Affichage du detail d'un message
  - show.ejs
