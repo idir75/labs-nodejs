@@ -56,3 +56,12 @@ Etapes
  - moments.js
 - Affichage du detail d'un message
  - show.ejs
+
+Ressources
+ - Introduction à Express.js
+  - Article https://www.grafikart.fr/formations/nodejs/express
+  - Vidéo https://www.youtube.com/watch?v=Q8wacXNngXs
+ - MongoDB
+  - Installation https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+  - MongoDB avec NodeJS https://www.w3schools.com/nodejs/nodejs_mongodb.asp
+-
