@@ -19,7 +19,7 @@ Etapes
 - Installation du moteur de tempate EJS
   - npm i -save ejs
 - Installation du framework CSS semantic UI
-- Chargement des données statiques dans node/express
+- Chargement des données statiques
   - app.use(express.static('public'))
     - Préciser à Express quel répertoire contient les fichiers statiques (dans notre exemple c'est le répertoire 'public')
     - Il est possible d'associer un mot-clé avec tout le répertoire des fichiers statiques. Dès que le mot-clé est utilisé, Express sait qu'il s'agit de ressources statiques.
@@ -28,8 +28,8 @@ Etapes
 - Installation de express session
   - npm i -save express-sessions
 - Utilisation de la session
-  - Sauvegarder des données dans la session : equest.session.SESSION_KEY (SESSION_KEY clé d'une donnée en session)
-  - Accès aux données sauvegardées dans la session : equest.session.SESSION_KEY
+  - Sauvegarder des données dans la session : request.session.SESSION_KEY (SESSION_KEY clé d'une donnée en session)
+  - Accès aux données sauvegardées dans la session : request.session.SESSION_KEY
 - Création d'un middleware de gestion des sessions
   - Fichier de définition du middleware : middlewares/flash.js
   - Déclaration du middleware
