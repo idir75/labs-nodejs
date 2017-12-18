@@ -53,6 +53,6 @@ Etapes
 - Installation du package moment
   - npm i --save moment
 - Localisation
- - moments.js
+  - moments.js
 - Affichage du detail d'un message
- - show.ejs
+  - show.ejs
