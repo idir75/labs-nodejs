@@ -1,12 +1,12 @@
 Lab
-- Création d'une application web avec node.js
+- Création d'une application web avec Node.js
 
 Objectif
-- Ce lab a pour objectif l'initialisation d'un projet node.js en utilisant les frameworks express (node pour applications web), ejs (moteur de template) et semantic UI (CSS)
+- Ce lab a pour objectif la création d'une petite application web avec Node.js en utilisant les frameworks Express (Node pour applications web), MongoDB pour la persistence, EJS (moteur de templates) et semantic UI (CSS)
 
 Etapes
 - Créer le fichier server.js
-- Initialiser le projet avec la commande : npm Init
+- Initialiser le projet avec la commande : npm init
   - Cela a pour conséquence la création du fichier package.json contenant la description du projet
   - Il contient notamment la commande de démarrage du serveur : node server.js
 - Installation du micro-framework express.js
@@ -16,35 +16,35 @@ Etapes
   - npm i --save nodemon
 - pour lancer le serveur
   - npm run start
-- Installation du moteur de tempate ejs
+- Installation du moteur de tempate EJS
   - npm i -save ejs
 - Installation du framework CSS semantic UI
 - Chargement des données statiques dans node/express
   - app.use(express.static('public'))
-    - Préciser à Express quel répertoire contient les fichiers statiques (dans notre exemple c'est le répertoire 'public'
+    - Préciser à Express quel répertoire contient les fichiers statiques (dans notre exemple c'est le répertoire 'public')
     - Il est possible d'associer un mot-clé avec tout le répertoire des fichiers statiques. Dès que le mot-clé est utilisé, Express sait qu'il s'agit de ressources statiques.
 - Insallation du package body-parser
   - npm i --save body-parser
 - Installation de express session
   - npm i -save express-sessions
 - Utilisation de la session
-  - Sauvegarder des données dans la session : equest.session.error
-  - Accès aux données sauvegardées dans la session : equest.session.error
-- Création d'un middleware de gestion de sessions
+  - Sauvegarder des données dans la session : equest.session.SESSION_KEY (SESSION_KEY clé d'une donnée en session)
+  - Accès aux données sauvegardées dans la session : equest.session.SESSION_KEY
+- Création d'un middleware de gestion des sessions
   - Fichier de définition du middleware : middlewares/flash.js
   - Déclaration du middleware
     - module.exports = function (request, response, next)
   - Ajout d'une méthode dans la request
     - request.flash = function (type, content)
   - Ajout d'une clé dans response.locals
-    -   response.locals.VARIABLE_NAME = value
-  - Accès du contenu correspondant à la clé
-    - response.locals.VARIABLE_NAME.PROPERTY_NAME
-- Installaton de mongodb
+    -   response.locals.SESSION_KEY = value
+  - Accès au contenu correspondant à la clé
+    - response.locals.SESSION_KEY.PROPERTY_NAME
+- Installaton de MongoDB
   - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
-- Installation du module mongodb
+- Installation du module MongoDB
   - npm i --save mongodb
-- Création de la base de données mongodb
+- Création de la base de données MongoDB
   - config\mongodb_create_db.js
 - Création de la collection : messages
   - mongodb_create_collection.js
@@ -52,7 +52,7 @@ Etapes
   - message.js
 - Installation du package moment
   - npm i --save moment
-- Internationalisation
+- Localisation
  - moments.js
 - Affichage du detail d'un message
  - show.ejs
