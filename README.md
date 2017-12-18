@@ -2,7 +2,7 @@ Lab
 - Création d'une application web avec Node.js
 
 Objectif
-- Ce lab a pour objectif la création d'une petite application web avec Node.js en utilisant les frameworks Express (Node pour applications web), MongoDB pour la persistence, EJS (moteur de templates) et semantic UI (CSS)
+- Ce lab a pour objectif la création d'une petite application web avec Node.js en utilisant les frameworks Express (Node pour applications web), MongoDB pour la persistence des données, EJS (moteur de templates) et semantic UI (CSS)
 
 Etapes
 - Créer le fichier server.js
