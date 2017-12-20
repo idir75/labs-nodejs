@@ -55,9 +55,9 @@ Etapes
   - show.ejs
 
 Ressources
- - Introduction à Express.js
+- Introduction à Express.js
   - https://www.grafikart.fr/formations/nodejs/express
   - https://www.youtube.com/watch?v=Q8wacXNngXs
- - MongoDB
+- MongoDB
   - Installation https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
   - MongoDB avec NodeJS https://www.w3schools.com/nodejs/nodejs_mongodb.asp
