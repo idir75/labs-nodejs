@@ -1,7 +1,4 @@
-Lab
-- Création d'une application web avec Node.js
-
-Objectif
+Objectif du lab
 - Ce lab a pour objectif la création d'une petite application web avec Node.js en utilisant les frameworks Express (Node pour applications web), MongoDB pour la persistence des données, EJS (moteur de templates) et semantic UI (CSS)
 
 Etapes
@@ -59,9 +56,8 @@ Etapes
 
 Ressources
  - Introduction à Express.js
-  - Article https://www.grafikart.fr/formations/nodejs/express
-  - Vidéo https://www.youtube.com/watch?v=Q8wacXNngXs
+  - https://www.grafikart.fr/formations/nodejs/express
+  - https://www.youtube.com/watch?v=Q8wacXNngXs
  - MongoDB
   - Installation https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
   - MongoDB avec NodeJS https://www.w3schools.com/nodejs/nodejs_mongodb.asp
--
